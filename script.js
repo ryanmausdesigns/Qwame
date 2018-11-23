@@ -15,20 +15,20 @@ childA1.arc(120, 30, 20, 0, 2 * Math.PI);
 var dockB = new Path2D();
 dockB.arc(170, 80, 20, 0, 2 * Math.PI);
 
-var dockB1 = new Path2D();
-dockB1.arc(120, 80, 20, 0, 2 * Math.PI);
+var childB1 = new Path2D();
+childB1.arc(120, 80, 20, 0, 2 * Math.PI);
 
 var dockC = new Path2D();
 dockC.arc(170, 130, 20, 0, 2 * Math.PI);
 
-var dockC1 = new Path2D();
-dockC1.arc(120, 130, 20, 0, 2 * Math.PI);
+var childC1 = new Path2D();
+childC1.arc(120, 130, 20, 0, 2 * Math.PI);
 
 var dockD = new Path2D();
 dockD.arc(170, 180, 20, 0, 2 * Math.PI);
 
-var dockD1 = new Path2D();
-dockD1.arc(120, 180, 20, 0, 2 * Math.PI);
+var childD1 = new Path2D();
+childD1.arc(120, 180, 20, 0, 2 * Math.PI);
 
 //drawDock 
 ctx.stroke(dockA);
@@ -56,11 +56,11 @@ canvas.addEventListener("mousemove", (event) => {
             }else {ctx.clearRect(0, 0, 145, canvas.height)
             }
         } else if (ctx.isPointInPath(dockB, x, y)){
-            ctx.stroke(dockB1);
+            ctx.stroke(childB1);
         } else if (ctx.isPointInPath(dockC, x, y)){
-            ctx.stroke(dockC1);
+            ctx.stroke(childC1);
         } else if (ctx.isPointInPath(dockD, x, y)){
-            ctx.stroke(dockD1);
+            ctx.stroke(childD1);
         } else {
             ctx.clearRect(0, 0, 145, canvas.height);
         }});
